@@ -11,3 +11,23 @@ export type DescriptionMap = {
   Rain: string;
   Haze: string;
 };
+export type FormAddressData = {
+  streetName?: string;
+  cityName?: string;
+  stateName?: string;
+};
+
+export type FormContactData = {
+  nome?: string;
+  email?: string;
+  mensagem?: string;
+  arquivo?: {
+    nome: string;
+  } | null;
+};
+
+export type AddressResult = {
+  cep?: string;
+  logradouro?: string;
+  bairro?: string;
+};

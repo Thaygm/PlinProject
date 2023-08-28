@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -11,10 +11,25 @@ const Header: React.FC = () => {
           </span>
           <div className="flex items-center  bg-gradient-to-r from-teal via-winter to-navy pt-1 w-full rounded-8"></div>
         </div>
-        <div id="opcoesMenu" className="flex justify-between">
-          <Link to="/">Previsão do Tempo</Link>
-          <Link to="/endereco">Buscar Endereço</Link>
-          <Link to="/contato">Formulário</Link>
+        <div id="opcoesMenu" className="justify-between">
+          <Link
+            to="/"
+            className="font-bold text-navy transition duration-300 hover:text-darkTeal w-full m-12"
+          >
+            Previsão do Tempo
+          </Link>
+          <Link
+            to="/endereco"
+            className="font-bold text-navy transition duration-300 hover:text-darkTeal w-full md:w-auto md:mr-12"
+          >
+            Buscar Endereço
+          </Link>
+          <Link
+            to="/contato"
+            className="font-bold text-navy transition duration-300 hover:text-darkTeal w-full md:w-auto md:mr-2"
+          >
+            Formulário
+          </Link>
         </div>
       </div>
     </nav>
