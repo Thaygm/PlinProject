@@ -33,16 +33,16 @@ const ClimaTempo: React.FC = () => {
 
   const backgroundStyle = {
     backgroundImage: `url(${convertImage(weatherData?.description)})`,
-    backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    minHeight: '40vw',
+    backgroundSize: '450px',
+    minHeight: '37vw',
     minWidth: '40vh'
   };
   return (
     <div
       id="App"
-      className="flex flex-grow flex-col items-center justify-center min-h-screen flex justify-between bg-white"
+      className="flex flex-grow flex-col items-center justify-center min-h-screen flex justify-between bg-white rounded-b-lg"
       style={backgroundStyle}
     >
       <div className="w-90vw rounded-lg p-6 bg-center">
