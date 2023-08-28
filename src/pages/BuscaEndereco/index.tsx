@@ -29,13 +29,10 @@ const BuscaEndereco: React.FC = () => {
     setLoading(false);
   };
   return (
-    <div id="container" className="flex-col items-center flex flex-wrap container mx-auto p-8">
-      <form
-        onSubmit={handleSubmit}
-        className="w-full max-w-lg  bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-      >
-        <div className="mb-4">
-          <label className="block">Nome do Estado:</label>
+    <form onSubmit={handleSubmit} className=" py-10 w-full max-w-lg mx-auto my-10">
+      <div id="container" className="flex flex-wrap -mx-3 mb-6 py-10">
+        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-5">
+          <label className="block mt-5">Nome do Estado:</label>
           <input
             type="text"
             value={addressData?.stateName}
@@ -45,8 +42,8 @@ const BuscaEndereco: React.FC = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <div className="mb-4">
-          <label className="block">Nome da Cidade:</label>
+        <div className="w-full md:w-1/2 px-3">
+          <label className="block mt-5">Nome da Cidade:</label>
           <input
             type="text"
             value={addressData?.cityName}
@@ -56,8 +53,8 @@ const BuscaEndereco: React.FC = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <div className="mb-4">
-          <label className="block">Nome da Rua:</label>
+        <div className="w-full px-3">
+          <label className="block ">Nome da Rua:</label>
           <input
             type="text"
             value={addressData?.streetName}
@@ -70,11 +67,11 @@ const BuscaEndereco: React.FC = () => {
         <button
           type="submit"
           disabled={loading}
-          className="bg-waterGreen hover:bg-darkWinter text-black font-bold py-2 px-4 rounded"
+          className="w-full max-w-lg mx-auto mt-5 mb-10 bg-waterGreen hover:bg-darkWinter text-black font-bold py-2 px-4 rounded"
         >
           Buscar CEP
         </button>
-      </form>
+      </div>
       {loading && <p>Carregando...</p>}
       {results.length > 0 && (
         <div>
@@ -89,7 +86,7 @@ const BuscaEndereco: React.FC = () => {
           </ul>
         </div>
       )}
-    </div>
+    </form>
   );
 };
 
