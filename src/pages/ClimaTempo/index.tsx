@@ -35,17 +35,16 @@ const ClimaTempo: React.FC = () => {
     backgroundImage: `url(${convertImage(weatherData?.description)})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    backgroundSize: '450px',
-    minHeight: '37vw',
-    minWidth: '40vh'
+    backgroundSize: '300px',
+    minHeight: '67vh'
   };
   return (
     <div
       id="App"
-      className="flex flex-grow flex-col items-center justify-center min-h-screen flex justify-between bg-white rounded-b-lg"
+      className="bg-cover bg-center flex flex-grow flex-col items-center justify-center min-h-screen flex justify-between bg-white rounded-b-lg"
       style={backgroundStyle}
     >
-      <div className="w-90vw rounded-lg p-6 bg-center">
+      <form className="w-90vw rounded-lg p-6 bg-center bg-opacity-80">
         <h1 className="text-darkgreen text-2xl font-semibold">Aplicação de Clima</h1>
         {error ? (
           <p className="text-red-600">{error}</p>
@@ -60,7 +59,7 @@ const ClimaTempo: React.FC = () => {
         ) : (
           <p className="mt-4">Carregando...</p>
         )}
-      </div>
+      </form>
     </div>
   );
 };

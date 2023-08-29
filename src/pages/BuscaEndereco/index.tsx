@@ -67,7 +67,7 @@ const BuscaEndereco: React.FC = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full max-w-lg mx-auto mt-5 mb-10 bg-waterGreen hover:bg-darkWinter text-black font-bold py-2 px-4 rounded"
+          className="w-full mx-auto mb-10 mt-5 bg-waterGreen hover:bg-darkWinter text-black font-bold py-2 px-4 rounded"
         >
           Buscar CEP
         </button>
