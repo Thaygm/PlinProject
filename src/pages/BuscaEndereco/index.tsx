@@ -43,8 +43,8 @@ const BuscaEndereco: React.FC = () => {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
-          <div className="w-full md:w-1/2 px-3">
-            <label className="block mt-2">Nome da Cidade:</label>
+          <div className="-full md:w-1/2 px-3 mb-2 md:mb-5">
+            <label className="block mt-5">Nome da Cidade:</label>
             <input
               type="text"
               value={addressData?.cityName}

@@ -9,6 +9,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
+You can register on this site to register an API key code to use in your project. To do so, create a ".env" file and replace: "REACT_APP_API_KEY=KEYCODEAPI"(https://openweathermap.org/)
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
