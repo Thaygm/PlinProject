@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can register on this site to register an API key code to use in your project. To do so, create a ".env" file and replace: "REACT_APP_API_KEY=KEYCODEAPI"(https://openweathermap.org/).
 
 ## Available Scripts
 
